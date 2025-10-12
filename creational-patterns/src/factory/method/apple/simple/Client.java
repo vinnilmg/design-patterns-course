@@ -1,19 +1,18 @@
 package factory.method.apple.simple;
 
-import factory.method.apple.simple.model.IPhone;
-import factory.method.apple.simple.pattern.IphoneFactory;
+import factory.method.apple.simple.pattern.IphoneSimpleFactory;
 
 public class Client {
 
     public static void main(String[] args) {
-/*        final var factory = new IphoneFactory();
+        final var factory = new IphoneSimpleFactory();
 
         System.out.println("### Ordering an iPhone X");
-        IPhone iphone = factory.orderIPhone("X", "standard");
-        System.out.println(iphone);
+        final var iphoneX = factory.orderIphone("X", "standard");
+        System.out.println(iphoneX);
 
         System.out.println("\n\n### Ordering an iPhone 11 HighEnd");
-        IPhone iphone2 = factory.orderIPhone("11", "highEnd");
-        System.out.println(iphone2);*/
+        final var iphone11 = factory.orderIphone("11", "highend");
+        System.out.println(iphone11);
     }
 }
