@@ -6,10 +6,12 @@ public abstract class IphoneFactory {
 
     public IPhone orderIphone() {
         final var device = createIphone();
+
         device.getHardware();
         device.assemble();
         device.certificates();
         device.pack();
+
         return device;
     }
 

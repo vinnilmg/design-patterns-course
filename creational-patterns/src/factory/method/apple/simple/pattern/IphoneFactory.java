@@ -5,13 +5,14 @@ import factory.method.apple.simple.model.IPhone;
 public class IphoneFactory {
 
     public IPhone orderIphone(String generation, String level) {
-        final var device = createIphone(generation, level);
+/*        final var device = createIphone(generation, level);
         device.getHardware();
         device.assemble();
         device.certificates();
         device.pack();
-        return device;
+        return device;*/
+        return null;
     }
 
-    protected abstract IPhone createIphone(String generation, String level);
+//    protected abstract IPhone createIphone(String generation, String level);
 }

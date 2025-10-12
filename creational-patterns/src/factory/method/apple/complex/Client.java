@@ -13,7 +13,7 @@ public class Client {
 
         System.out.println("\n\n### Ordering an iPhone 11 HighEnd");
         final var iphone11ProFactory = new Iphone11ProFactory();
-        final var iphone2 = iphone11ProFactory.orderIphone();
-        System.out.println(iphone2);
+        final var iphone11 = iphone11ProFactory.orderIphone();
+        System.out.println(iphone11);
     }
 }

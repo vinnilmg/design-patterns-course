@@ -1,15 +1,8 @@
 package factory.method.apple.simple.pattern.impl;
 
-import factory.method.apple.simple.model.IPhone;
-import factory.method.apple.simple.model.IPhone11;
-import factory.method.apple.simple.model.IPhone11Pro;
-import factory.method.apple.simple.model.IPhoneX;
-import factory.method.apple.simple.model.IPhoneXSMax;
-import factory.method.apple.simple.pattern.IphoneFactory;
-
-public class IphoneFactoryImpl extends IphoneFactory {
+/*public class IphoneFactoryImpl extends IphoneFactory {
     @Override
-    public IPhone createIphone(String generation, String level) {
+    public IPhone createIphone(final String generation, final String level) {
         IPhone device = null;
 
         if (generation.equals("X")) {
@@ -28,4 +21,4 @@ public class IphoneFactoryImpl extends IphoneFactory {
 
         return device;
     }
-}
+}*/
