@@ -10,7 +10,7 @@ import static java.util.Objects.nonNull;
 
 public class IphoneSimpleFactory {
 
-    public IPhone orderIphone(final String generation, final String level) {
+    public static IPhone orderIphone(final String generation, final String level) {
         final var device = createIphone(generation, level);
 
         if (nonNull(device)) {
@@ -23,7 +23,7 @@ public class IphoneSimpleFactory {
         return device;
     }
 
-    private IPhone createIphone(final String generation, final String level) {
+    private static IPhone createIphone(final String generation, final String level) {
         return switch (generation) {
             case "X" -> {
                 if (level.equals("standard")) {
