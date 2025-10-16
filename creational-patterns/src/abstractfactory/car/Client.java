@@ -1,0 +1,20 @@
+package abstractfactory.car;
+
+import abstractfactory.car.factory.CarAbstractFactory;
+
+public class Client {
+    public static void main(String[] args) {
+        final var carAbstractFactory = new CarAbstractFactory();
+
+        final var carEJBService = carAbstractFactory.getEJBService();
+        final var carRestService = carAbstractFactory.getRestService();
+
+        System.out.println("Usando EJB");
+        carEJBService.save("Civic");
+        carEJBService.delete("Civic");
+
+        System.out.println("\n\nUsando REST");
+        carRestService.save("Civic");
+        carRestService.delete("Civic");
+    }
+}
