@@ -7,6 +7,7 @@ import builder.meal.complex.pattern.builder.JustFriesBuilder;
 import builder.meal.complex.pattern.director.MealDirector;
 
 public class Client {
+
     public static void order(final String comboName, final FastFoodMealBuilder builder) {
         System.out.println("### Ordering a combo: " + comboName);
 
@@ -16,7 +17,6 @@ public class Client {
 
         System.out.println("------------------------------------------");
     }
-
 
     public static void main(String[] args) {
         order("Burguer", new BurguerComboBuilder());
