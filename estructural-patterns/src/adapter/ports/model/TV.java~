@@ -1,4 +1,0 @@
-package adapter.ports.model;
-
-public class TV {
-}
