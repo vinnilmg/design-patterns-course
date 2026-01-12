@@ -1,0 +1,18 @@
+package bridge.backend.service;
+
+import bridge.backend.dao.UserDao;
+import bridge.backend.model.User;
+
+public class UserRestService implements UserService {
+    private final UserDao userDao;
+
+    public UserRestService(UserDao userDao) {
+        this.userDao = userDao;
+    }
+
+    @Override
+    public void save(User user) {
+        System.out.println("Starting save user with REST protocol");
+        userDao.save(user);
+    }
+}
