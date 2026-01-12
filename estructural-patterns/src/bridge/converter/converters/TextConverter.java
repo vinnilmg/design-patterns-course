@@ -2,14 +2,11 @@ package bridge.converter.converters;
 
 import bridge.converter.employees.Employee;
 
-import java.util.Locale;
-
-public class JsonConverter implements Converter {
+public class TextConverter implements Converter {
     @Override
     public String getEmployeeFormated(Employee employee) {
         return String.format(
-                Locale.US,
-                "{\"name\":\"%s\",\"age\":%d,\"salary\":%.2f}",
+                "O %s tem %d anos e ganha R$ %.2f",
                 employee.getName(),
                 employee.getAge(),
                 employee.getSalary()
